@@ -1,0 +1,19 @@
+group 'com.johnsoft.tools'
+version '1.0.0'
+
+apply plugin: 'java'
+
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.github.javaparser:javaparser-core:3.13.1'
+    implementation 'org.ow2.asm:asm:7.0'
+}
